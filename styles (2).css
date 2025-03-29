@@ -1,0 +1,451 @@
+
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #287094, #D4D4CE, #023246);
+    color: #ffffff;
+    text-align: center;
+    overflow-x: hidden;
+    background-attachment: fixed; /* For parallax-like effect */
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 18px;
+}
+
+
+.header {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    background: (#023246);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 3rem; /* Adjust font size as needed */
+    color: white; /* Main text color */
+    text-shadow: 
+        -1.5px -1.5px 0 #000, /* Top-left shadow */
+        1.5px -1.5px 0 #000,  /* Top-right shadow */
+        -1.5px 1.5px 0 #000,  /* Bottom-left shadow */
+        1.5px 1.5px 0 #000;   /* Bottom-right shadow */
+}
+
+
+.header p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+    color: #dcdcdc;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav button {
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #287094, #D4D4CE);
+    border: none;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav button:hover {
+    background: linear-gradient(45deg, #D4D4CE, #287094);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    padding: 30px;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content iframe {
+    width: 80%;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.content p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #dcdcdc;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    .header p {
+        font-size: 1rem;
+    }
+    .nav button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    .content iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+/* Add this to your styles.css file */
+.button-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.interactive-button {
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #b08fff, #1234e0);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.interactive-button:hover {
+    background: linear-gradient(45deg, #1e202a, #61dafb);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+#hover-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #000000;
+    height: 20px;
+    text-align: center;
+}
+
+/* Add this to your styles.css file */
+.button-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.interactive-button {
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #287094, #D4D4CE);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.interactive-button:hover {
+    background: linear-gradient(45deg, #b3cf99, #c7ddb5);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+#display-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #000000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#display-text.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Add this to your styles.css file */
+.button-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.interactive-button {
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #287094, #D4D4CE);
+    border: none;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.interactive-button:hover {
+    background: linear-gradient(45deg, #D4D4CE, #287094);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+#display-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #000000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#display-text.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#display-text.hide {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+/* styles.css */
+p {
+    text-align: justify; /* This will justify all paragraphs */
+    margin: 0 15px; /* Optional: Add some margin for spacing */
+    font-size: 20px; /* Increase the font size of paragraphs */
+}
+
+/* If you want to apply just to specific paragraphs, you can create a class */
+.justified-text {
+    text-align: justify;
+    margin: 0 15px; /* Optional margin for spacing */
+}
+
+/* Initially hide the image */
+.hidden {
+    display: none;
+  }
+  
+  /* Optional: Style the image */
+  #image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #000;
+    margin-top: 10px;
+  }
+  
+  #product-image {
+    width: 500px; /* Set the width of the image */
+    height: 500px; /* Keep the aspect ratio */
+    border-radius: 15px; /* Add rounded corners */
+    border: 5px solid #023246; /* Add a border with a specific color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    margin-top: 20px; /* Add spacing at the top */
+    transition: transform 0.3s, opacity 0.3s; /* Add smooth animation for effects */
+}
+
+#product-image:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    opacity: 0.9; /* Slightly fade the image on hover */
+}
+
+#product-image2 {
+    width: 350px; /* Set the width of the image */
+    height: 350px; /* Keep the aspect ratio */
+    border-radius: 50%; /* Add rounded corners */
+    border: 5px solid #023246; /* Add a border with a specific color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    margin-top: 20px; /* Add spacing at the top */
+    transition: transform 0.3s, opacity 0.3s; /* Add smooth animation for effects */
+}
+
+#product-image:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    opacity: 0.9; /* Slightly fade the image on hover */
+}
+
+#product-image22 {
+    width: 1500px; /* Set the width of the image */
+    height: 800px; /* Keep the aspect ratio */
+    border-radius: 15px; /* Add rounded corners */
+    border: 5px solid #023246; /* Add a border with a specific color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    margin-top: 20px; /* Add spacing at the top */
+    transition: transform 0.3s, opacity 0.3s; /* Add smooth animation for effects */
+}
+
+#product-image33 {
+    width: 1500px; /* Set the width of the image */
+    height: 350px; /* Keep the aspect ratio */
+    border-radius: 15px; /* Add rounded corners */
+    border: 5px solid #023246; /* Add a border with a specific color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    margin-top: 20px; /* Add spacing at the top */
+    transition: transform 0.3s, opacity 0.3s; /* Add smooth animation for effects */
+}
+
+#product-image44 {
+    width: 150px; /* Set the width of the image */
+    height: 500px; /* Keep the aspect ratio */
+    border-radius: 15px; /* Add rounded corners */
+    border: 5px solid #023246; /* Add a border with a specific color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    margin-top: 20px; /* Add spacing at the top */
+    transition: transform 0.3s, opacity 0.3s; /* Add smooth animation for effects */
+}
+
+#product-image45 {
+    width: 150px; /* Set the width of the image */
+    height: 600px; /* Keep the aspect ratio */
+    border-radius: 15px; /* Add rounded corners */
+    border: 5px solid #023246; /* Add a border with a specific color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    margin-top: 20px; /* Add spacing at the top */
+    transition: transform 0.3s, opacity 0.3s; /* Add smooth animation for effects */
+}
+
+#product-image46 {
+    width: 150px; /* Set the width of the image */
+    height: 450px; /* Keep the aspect ratio */
+    border-radius: 15px; /* Add rounded corners */
+    border: 5px solid #023246; /* Add a border with a specific color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    margin-top: 20px; /* Add spacing at the top */
+    transition: transform 0.3s, opacity 0.3s; /* Add smooth animation for effects */
+}
+
+#product-image47 {
+    width: 200px; /* Set the width of the image */
+    height: 750px; /* Keep the aspect ratio */
+    border-radius: 15px; /* Add rounded corners */
+    border: 5px solid #023246; /* Add a border with a specific color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    margin-top: 20px; /* Add spacing at the top */
+    transition: transform 0.3s, opacity 0.3s; /* Add smooth animation for effects */
+}
+
+#product-image48 {
+    width: 200px; /* Set the width of the image */
+    height: 750px; /* Keep the aspect ratio */
+    border-radius: 15px; /* Add rounded corners */
+    border: 5px solid #023246; /* Add a border with a specific color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    margin-top: 20px; /* Add spacing at the top */
+    transition: transform 0.3s, opacity 0.3s; /* Add smooth animation for effects */
+}
+
+
+#product-image50 {
+    width: 100cm; /* Set the width of the image */
+    height: 500px; /* Keep the aspect ratio */
+    border-radius: 15px; /* Add rounded corners */
+    border: 5px solid #023246; /* Add a border with a specific color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    margin-top: 20px; /* Add spacing at the top */
+    transition: transform 0.3s, opacity 0.3s; /* Add smooth animation for effects */
+}
+
+#product-image52 {
+    width: 100cm; /* Set the width of the image */
+    height: 500px; /* Keep the aspect ratio */
+    border-radius: 15px; /* Add rounded corners */
+    border: 5px solid #6e9965; /* Add a border with a specific color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    margin-top: 20px; /* Add spacing at the top */
+    transition: transform 0.3s, opacity 0.3s; /* Add smooth animation for effects */
+}
+
+
+footer {
+    background-color: #287094;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px; /* Smaller font */
+}
+
+.contact-container {
+    max-width: 350px; /* Limits width */
+    margin: 0 auto;
+    padding: 5px 15px; /* Adjust padding */
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align to left */
+    gap: 8px;
+    margin: 5px auto;
+}
+
+.contact-item i {
+    font-size: 16px; /* Smaller icons */
+    color: #f8c10d;
+}
+
+.contact-item span {
+    font-size: 12px; /* Smaller text */
+}
+
+.footer-text {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #bbb;
+}
